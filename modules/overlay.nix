@@ -2,6 +2,6 @@
 
 {
   flake.overlays.default = final: prev: {
-    substratum = self.packages.${final.system};
+    substratum = self.packages.${final.stdenv.hostPlatform.system};
   };
 }
