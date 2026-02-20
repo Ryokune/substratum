@@ -14,16 +14,27 @@
         inherit system;
         config.allowUnfree = true;
       };
-      packages = lib.listToAttrs (
-        (((inputs.import-tree.new.addPath ../packages).leafs.withLib lib).map (file: {
-          name = lib.removeSuffix ".nix" (baseNameOf file);
-          value = pkgs.callPackage file { };
-        })).result
-      );
-      apps = builtins.mapAttrs (name: pkg: {
-        type = "app";
-        program = "${pkg}/bin/${name}";
-        meta = pkg.meta;
-      }) self'.packages;
+      packages =
+        let
+          tree = (inputs.import-tree.new.addPath ../packages).leafs.withLib lib;
+        in
+        lib.listToAttrs (
+          map (file: {
+            name = lib.removeSuffix ".nix" (baseNameOf file);
+            value = pkgs.callPackage file { };
+          }) tree.result
+        );
+      apps =
+        lib.mapAttrs
+          (name: pkg: {
+            type = "app";
+            program = lib.getExe pkg;
+            meta = pkg.meta;
+          })
+          (
+            lib.filterAttrs (
+              name: pkg: (pkg ? meta.mainProgram) || (builtins.pathExists "${pkg}/bin")
+            ) self'.packages
+          );
     };
 }
