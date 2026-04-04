@@ -7,7 +7,7 @@
 }:
 let
   pname = "hayase";
-  version = "6.4.56";
+  version = "6.4.57";
 
   src = fetchurl {
     url = "https://api.hayase.watch/files/linux-hayase-${version}-linux.AppImage";
