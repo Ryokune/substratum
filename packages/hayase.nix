@@ -11,7 +11,7 @@ let
 
   src = fetchurl {
     url = "https://api.hayase.watch/files/linux-hayase-${version}-linux.AppImage";
-    hash = "sha256-9Vw9KhcBwtzdi6+DnZE8ZcI5uNuY6iZkNf1n0+5Acc8=";
+    hash = "sha256-NnnETQFmBMgdyizOZ6mZvvqEdgwzg2ZuDCuVRqbbSX4=";
   };
   contents = appimageTools.extractType2 {
     inherit pname version src;
