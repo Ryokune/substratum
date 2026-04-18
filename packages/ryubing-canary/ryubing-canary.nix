@@ -7,7 +7,7 @@
   cctools,
   darwin,
   dotnetCorePackages,
-  fetchFromGitLab,
+  fetchFromGitea,
   libx11,
   libgdiplus,
   moltenvk,
@@ -35,14 +35,14 @@
 
 buildDotnetModule rec {
   pname = "ryubing-canary";
-  version = "1.3.265";
+  version = "1.3.271";
 
-  src = fetchFromGitLab {
+  src = fetchFromGitea {
     domain = "git.ryujinx.app";
     owner = "ryubing";
     repo = "ryujinx";
     rev = "Canary-${version}";
-    hash = "sha256-792+mE5346LVy/vUm6SJlkrcxJrf70Y3wWsBEGUuSnY=";
+    hash = "sha256-klmhC75a21/wlaZEU0ZRV59+Bxw5zVp7fJbHRP2seZk=";
   };
 
   nativeBuildInputs =

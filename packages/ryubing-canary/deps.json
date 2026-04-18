@@ -420,16 +420,6 @@
     "hash": "sha256-VdwpP5fsclvNqJuppaOvwEwv2ofnAI5ZSz2V+UEdLF0="
   },
   {
-    "pname": "Microsoft.AspNetCore.App.Runtime.linux-arm64",
-    "version": "10.0.5",
-    "hash": "sha256-QsAPLx4i3zidEO8f0EC/Bl6wVHlsyDhd+cTXnmCM9uc="
-  },
-  {
-    "pname": "Microsoft.AspNetCore.App.Runtime.osx-arm64",
-    "version": "10.0.5",
-    "hash": "sha256-r0qh08XKKT1Axy+HzGIgwSMtjO19cvf/miO88VMpOTw="
-  },
-  {
     "pname": "Microsoft.CodeAnalysis.Analyzers",
     "version": "3.3.4",
     "hash": "sha256-qDzTfZBSCvAUu9gzq2k+LOvh6/eRvJ9++VCNck/ZpnE="
@@ -488,26 +478,6 @@
     "pname": "Microsoft.NET.Test.Sdk",
     "version": "17.9.0",
     "hash": "sha256-q/1AJ7eNlk02wvN76qvjl2xBx5iJ+h5ssiE/4akLmtI="
-  },
-  {
-    "pname": "Microsoft.NETCore.App.Host.linux-arm64",
-    "version": "10.0.5",
-    "hash": "sha256-mDjk0QYkoTtKoY19cAr33yMf+MI199GOlDPHnIsTdak="
-  },
-  {
-    "pname": "Microsoft.NETCore.App.Host.osx-arm64",
-    "version": "10.0.5",
-    "hash": "sha256-zPUloT/vBqM4RCSPmXPZxtggb0FVHymCB5Kz+C3UxpM="
-  },
-  {
-    "pname": "Microsoft.NETCore.App.Runtime.linux-arm64",
-    "version": "10.0.5",
-    "hash": "sha256-eeocSfEoceo64k/4i3P/GnMaCtM9heCFynGQ/6EHLlc="
-  },
-  {
-    "pname": "Microsoft.NETCore.App.Runtime.osx-arm64",
-    "version": "10.0.5",
-    "hash": "sha256-hEPdc/UP3Ep19t3HP30Jgt7AovtgMcg80hfTc+5SGOQ="
   },
   {
     "pname": "Microsoft.NETCore.Platforms",
@@ -596,8 +566,8 @@
   },
   {
     "pname": "ppy.SDL3-CS",
-    "version": "2025.920.0",
-    "hash": "sha256-gNy0f95tR3hXkagzLH/mngGSsDA7UqIMKYyTf00nsCI="
+    "version": "2026.320.0",
+    "hash": "sha256-dK58LuY8DQgw3Wfnj/HPup7Hxa9r2QvT/GBJbpUQ874="
   },
   {
     "pname": "Projektanker.Icons.Avalonia",
@@ -633,19 +603,17 @@
     "pname": "Ryujinx.LibHac",
     "version": "0.21.0-alpha.129",
     "hash": "sha256-vwpjCsMZayUAzaydzcO9ktEzNIYEmDpQbhswGx8O7no=",
-    "url": "https://git.ryujinx.app/api/v4/projects/17/packages/nuget/download/ryujinx.libhac/0.21.0-alpha.129/ryujinx.libhac.0.21.0-alpha.129.nupkg"
+    "url": "https://git.ryujinx.app/api/packages/projects/nuget/package/ryujinx.libhac/0.21.0-alpha.129/ryujinx.libhac.0.21.0-alpha.129.nupkg"
   },
   {
     "pname": "Ryujinx.Systems.Update.Common",
     "version": "1.0.44",
-    "hash": "sha256-gYCmB2nbOlDJAd0hEAAjPXZmju4sd7DH+i6ciBWSRb4=",
-    "url": "https://git.ryujinx.app/api/v4/projects/71/packages/nuget/download/ryujinx.systems.update.common/1.0.44/ryujinx.systems.update.common.1.0.44.nupkg"
+    "hash": "sha256-2MPWhK/AqY6+iQ9iMmdqqhTxev5JWQjqz3KmoWV2kBE="
   },
   {
     "pname": "Ryujinx.UpdateClient",
     "version": "1.0.44",
-    "hash": "sha256-b/z8jPkU7Pc10g4gscgl8pD/NtQPT8EDA0SpKVZLW8U=",
-    "url": "https://git.ryujinx.app/api/v4/projects/71/packages/nuget/download/ryujinx.updateclient/1.0.44/ryujinx.updateclient.1.0.44.nupkg"
+    "hash": "sha256-4lKA2mscjyiJZAQf0ixAdVmwzDWog+CTGIftOmC0xnk="
   },
   {
     "pname": "securifybv.PropertyStore",
