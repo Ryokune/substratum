@@ -35,14 +35,14 @@
 
 buildDotnetModule rec {
   pname = "ryubing-canary";
-  version = "1.3.271";
+  version = "1.3.272";
 
   src = fetchFromGitea {
     domain = "git.ryujinx.app";
     owner = "ryubing";
     repo = "ryujinx";
     rev = "Canary-${version}";
-    hash = "sha256-klmhC75a21/wlaZEU0ZRV59+Bxw5zVp7fJbHRP2seZk=";
+    hash = "sha256-ZFseJ91leZOjs2G3HLKw1e2NAWmeOhAj8oB72rmzTCY=";
   };
 
   nativeBuildInputs =
